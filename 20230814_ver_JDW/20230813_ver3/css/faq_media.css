@@ -1,0 +1,62 @@
+@media(max-width:1025px){
+    .container{
+        max-width: 80%;
+    }
+    .banner_txt h2{
+        font-size: 4.2em;
+        margin-bottom: 7%;
+    }
+
+    .banner_txt strong{
+        font-size: 1.3em;
+        margin-bottom: 1.8%;
+    }
+
+    .banner_txt .one_btn{
+        width: 48%;
+        height: 10vh;
+    }
+    .banner_txt .one_btn a{
+        line-height: 10vh;
+    }
+
+    .fna_btn{
+        width:8.5vw;
+        font-size: 1.6em;
+    }
+}
+
+@media(max-width:769px){
+    .container{
+        max-width: 84%;
+    }
+    .banner{
+        height: 90vh;
+    }
+    .banner_txt{
+        top: 68%;
+    }
+
+    .banner_txt h2{
+        font-size: 4.6em;
+        margin-bottom: 20%;
+    }
+
+    .banner_txt strong{
+        font-size: 1.3em;
+        margin-bottom: 4%;
+    }
+
+    .banner_txt .one_btn{
+        width: 78%;
+        height: 10vh;
+    }
+    .banner_txt .one_btn a{
+        line-height: 10vh;
+    }
+
+    .fna_btn{
+        width:12vw;
+        font-size: 1.6em;
+    }
+}

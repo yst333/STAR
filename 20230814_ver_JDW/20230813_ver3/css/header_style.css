@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 100;
+}
+
+#header:hover {
+  background-color: #fff;
+}
+
+#header:hover a {
+  color: #000;
+}
+#header:hover a i {
+  color: #000;
+}
+
+#header:hover .header a img {
+  fill: #000;
+  filter: invert(100);
+  background-color: #000;
+}
+
+#header:hover .submenu a {
+  color: #000;
+}
+
+#header.active {
+  background-color: #fff;
+  height: 150px;
+}
+
+#header.active .header a {
+  color: #000;
+}
+
+#header.active .header a img {
+  fill: #000;
+  filter: invert(100);
+  background-color: #000;
+}
+
+
+#banner {
+  width: 100%;
+}
+
+.header {
+  background-color: transparent;
+  width: 100%;
+  height: 150px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo_header {
+  width: 35%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 28.5px; */
+  /* background-color: green; */
+}
+
+.logo_header h1 {}
+
+.logo_header h1 img {
+  width: 80%;
+}
+
+/* 네비 */
+.n {
+  margin-top: -150px;
+}
+
+.sub_nav {
+  height: 60px;
+  width: 65%;
+  float: right;
+  /* background-color: red; */
+}
+
+.sub_nav ul {
+  margin-bottom: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.sub_nav ul li {
+  width: 20%;
+  float: left;
+}
+
+.sub_nav ul li a {
+  height: 60px;
+  line-height: 60px;
+  padding-right: 50px;
+  display: block;
+  text-align: center;
+  font-size: 1em;
+}
+
+.sub_nav ul li a i {
+  padding-right: 1em;
+}
+
+.nav {
+  width: 65%;
+  /* background-color: blue; */
+  float: right;
+}
+
+.nav>ul {
+  margin-bottom: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.nav>ul>li {
+  width: 25%;
+  float: left;
+}
+
+.nav ul li a {
+  height: 90px;
+  line-height: 90px;
+  /* padding-left: 30px; */
+  text-align: center;
+  font-size: 1.3em;
+  display: block;
+  font-weight: bold;
+}
+
+.nav ul li ul.submenu {
+  position: relative;
+  z-index: 10;
+}
+
+.nav ul li ul.submenu li {}
+
+.nav ul li ul.submenu li a {
+  font-weight: normal;
+}
+
+#navbg {
+  width: 100%;
+  height: 360px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  z-index: 9;
+  /* border-bottom: 1px solid darkblue; */
+  display: none;
+}
+
+
+.banner {
+  height: 900px;
+}
+
+.banner .carousel.slide {}
+.banner .carousel.slide > div {}
+.banner .carousel.slide > div > div {
+  position: relative;
+}
+/* .carousel-item{
+  background-color: red;
+} */
+.banner .carousel.slide > div > div > img{}
+
+.banner .carousel.slide > div > div > .ban_tit .ban_big{
+  top: 40%;
+  font-size: 4.6em;
+}
+
+.banner .carousel.slide > div > div > .ban_tit h3{
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 36%;
+  left: 11%;
+  /* transform: translate(0%,-50%); */
+  white-space: nowrap;
+}
+.banner .carousel.slide > div > div > .ban_tit .long{
+  letter-spacing: -8% ;
+  font-size: 3em;
+}
+.banner .carousel.slide > div > div > .ban_tit p{
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 47%;
+  left: 11%;
+  transform: translate(0%,-50%);
+  font-size: 2.8em;
+}
+/* .banner .carousel.slide > div > div > h4.shorttext{
+ letter-spacing: -6% !important;
+} */
+.banner .carousel.slide > div > div > .ban_tit .banner_btn{
+  position: absolute;
+  top: 56%;
+  left: 11%;
+  /* transform: translate(0%,-50%); */
+  margin: 0 auto;
+  width: 13%;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.banner .carousel.slide > div > div > .ban_tit .banner_btn_2{
+  top: 56%;
+  left: 11%;
+}
+.banner .carousel.slide > div > div > .ban_tit .banner_btn a{
+  line-height: 90px;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'MICEGothic';
+  font-weight: 400;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+.banner .carousel.slide > div > div > .banner_btn:hover{
+  background-color: #36384E;
+  cursor: pointer;
+}
+.banner .carousel.slide > div > div > .banner_btn a:hover{
+  color: white;
+}
