@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MICEGothic Bold';
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 레이아웃 */
+#wrap {}
+
+
+#contents1 {
+    width: 100%;
+    padding-top: 150px;
+}
+#contents1 img {
+    width: 100%;
+}
+
+.container {
+    width: 1500px;
+    height: inherit;
+    /* background-color: red; */
+    margin: 0 auto;
+
+}
+
+/* header */
+.header {
+    height: 150px;
+}
+
+/* contents */
+
+.contents1 {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.contents2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3em;
+    text-align: center;
+}
+.contents3 {
+    margin-bottom: 5%;
+}
+
+.contents3 img {
+    margin: 0 auto;
+}
+.contents4 {
+    /* background-color: red; */
+}
+.contents4 ul {}
+.contents4 ul li {
+    overflow: hidden; 
+    line-height : 2;
+    padding-left: 15%;
+    /* border: 1px solid #333; */
+    /* background-color: red; */
+
+    
+    
+}
+.contents4 ul li p {
+    float: left;
+    margin-right: 5%;
+    font-size: 3em;
+    /* background-color: blue; */
+    cursor: pointer;
+    
+    
+}
+.contents4 ul li em {
+    float: left;
+    font-size: 1em;
+    /* border: 1px solid #333; */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: rgb(151, 165, 165);
+    height: 6em;
+    width: 50em;
+    text-align: center;
+    line-height: 6em;
+    background-color: #d1d1d1;
+    overflow: hidden;
+}
+.contents4 ul li .location {
+    line-height: 2em;
+}
+  
+  #banner {
+    width: 100%;
+  
+  }
+  
+  #contents {
+    position: relative;
+    height: 300vh;
+  }

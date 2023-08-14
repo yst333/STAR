@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'MICEGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li,ol{list-style: none;}
+a{display: block; color: #fff; text-decoration: none;}
+.clearfix::after, .clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+img{display: block;}
+
+/* --------------------------------------------------------- 복사  */
+
+#header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 100;
+    background-color: #fff;
+    font-family: 'MICEGothic';
+}
+
+#header .header a img {
+    fill: #000;
+    filter: invert(100);
+    background-color: #000;
+}
+
+.container2{
+    width: 1500px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+}
+
+.header a {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo_header {
+    width: 35%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_header h1 {}
+
+.logo_header h1 img {
+    width: 80%;
+}
+
+
+.n {
+    margin-top: -150px;
+}
+
+.sub_nav {
+    height: 60px;
+    width: 65%;
+    float: right;
+}
+
+.sub_nav ul {
+    margin-bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.sub_nav ul li {
+    width: 20%;
+    float: left;
+}
+
+.sub_nav ul li a {
+    height: 60px;
+    line-height: 60px;
+    padding-right: 50px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+
+.sub_nav ul li a i {
+    padding-right: 1em;
+}
+
+.nav {
+    width: 65%;
+    float: right;
+}
+
+.nav>ul {
+    margin-bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-left: 0rem;
+}
+
+.nav>ul>li {
+    width: 25%;
+    float: left;
+}
+
+.nav ul li a {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 1.3em;
+    display: block;
+    font-weight: bold;
+}
+
+.nav ul li ul.submenu {
+    padding-left: 0rem;
+    position: relative;
+    z-index: 10;
+    display: none;
+}
+
+.nav ul li ul.submenu li {}
+
+.nav ul li ul.submenu li a {}
+
+#navbg {
+    width: 100%;
+    height: 360px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    z-index: 9;
+    border-top: 1px solid #000;
+    display: none;
+}
+/* ----------------------------------------------------------- */
