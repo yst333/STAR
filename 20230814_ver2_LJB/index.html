@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별마루관측소</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/header_reset.css">
+    <link rel="stylesheet" href="./css/header_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+
+
+    <link rel="stylesheet" href="css/main_media_v2.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container2">
+            <div class="row">
+                <div class="header">
+                    <div class="logo_header">
+                        <h1>
+                            <a href="#"><img src="/20230814_ver1/img/logo.svg" alt="로고이미지"></a>
+                        </h1>
+                    </div>
+                    <div class="n">
+                        <div class="sub_nav">
+                            <ul class="clearfix">
+                                <li><a href="#"><i class="fa-regular fa-calendar-days"></i>온라인예약</a></li>
+                                <li><a href="login.html"><i class="fa-solid fa-user"></i>로그인</a></li>
+                                <li><a href="register.html"><i class="fa-solid fa-user-plus"></i>회원가입</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">별마루관측소</a>
+                                    <ul class="submenu">
+                                        <li><a href="introduce.html">관측소소개</a></li>
+                                        <li><a href="location.html">찾아오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">이용안내</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">운영시간안내</a></li>
+                                        <li><a href="#">관측방법안내</a></li>
+                                        <li><a href="#">예약안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">별별이야기</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">봄</a></li>
+                                        <li><a href="#">여름</a></li>
+                                        <li><a href="#">가을</a></li>
+                                        <li><a href="#">겨울</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">커뮤니티</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="fna.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="navbg"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="banner">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-touch="false" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner_bg.svg" class="d-block w-100" alt="프로그램안내">
+                        <div class="ban_tit">
+                            <h3 class="ban_big">프로그램 안내</h3>
+                            <span class="banner_btn banner_btn_2"><a href="#">바로가기</a></span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner_bg2.svg" class="d-block w-100" alt="하늘의 보석함을 열어 빛나는 보물들을 찾아냅니다.">
+                        <div class="ban_tit">
+                            <h3 class="long">하늘의 보석함을 열어</h3>
+                            <p>빛나는 보물들을 찾아냅니다</p>
+                            <span class="banner_btn"><a href="#">바로가기</a></span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner_bg3.svg" class="d-block w-100" alt="시간의 흐름을 별들의 움직임으로 읽어냅니다. 실시간 은하수 관측하기">
+                        <div class="ban_tit">
+                            <h3 class="long">시간의 흐름을 별들의 움직임으로 읽어냅니다</h3>
+                            <p>실시간 은하수 관측하기</p>
+                            <span class="banner_btn"><a href="#">바로가기</a></span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner_bg4.svg" class="d-block w-100" alt="온라인예약 바로가기">
+                        <div class="ban_tit">
+                            <h3 class="ban_big">온라인예약 바로가기</h3>
+                            <span class="banner_btn banner_btn_2"><a href="#">바로가기</a></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControlsNoTouching"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControlsNoTouching"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contents">
+        <div class="container">
+            <div class="row">
+                <div class="contents clearfix">
+                    <div class="bg">
+                    </div>
+                    <div class="fc">
+                        <div class="fc1">
+                            <div class="fc1_img">
+                                <img src="img/time.svg" alt="">
+                            </div>
+                            <div class="fc_txt">
+                                <h3>관람시간</h3>
+                                <p>오후4시~오전6시</p>
+                            </div>
+                        </div>
+                        <div class="fc2">
+                            <div class="fc2_img">
+                                <img src="img/rest.svg" alt="">
+                            </div>
+                            <div class="fc_txt">
+                                <h3>휴관일</h3>
+                                <p>매주,월요일,공휴일</p>
+                            </div>
+                        </div>
+                        <div class="fc3">
+                            <div class="fc3_img">
+                                <img src="img/map.svg" alt="">
+                            </div>
+                            <div class="fc_txt">
+                                <h3>오시는길</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lc">
+                        <table class="table">
+                            <h2 class="lc_tit">오늘의 지구 날씨</h2>
+                            <tr>
+                                <th>1회차 관측</th>
+                                <th>정원 12명</th>
+                                <th>
+                                    <article class="arrow">
+                                        <span>예약가능</span>
+                                    </article>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>2회차 관측</th>
+                                <th>정원 12명</th>
+                                <th>
+                                    <article class="arrow">
+                                        <span>예약가능</span>
+                                    </article>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>3회차 관측</th>
+                                <th>정원 12명</th>
+                                <th>
+                                    <article class="arrow">
+                                        <span>예약가능</span>
+                                    </article>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>4회차 관측</th>
+                                <th>정원 12명</th>
+                                <th>
+                                    <article class="arrow">
+                                        <span>예약가능</span>
+                                    </article>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="rc">
+                        <h2 class="rc_tit">오늘의 지구</h2>
+                        <div class="day">
+                            <span class="day1_icon"></span>
+                            <span class="day1_date">
+                                <strong id="month"></strong>
+                                <span class="point">.</span>
+                                <strong id="date"></strong>
+                                <span class="point">.</span>
+                                <strong id="year"></strong>
+                                <strong id="day"></strong>
+                            </span>
+                            <span class="day1_weather">
+                                <p></p>
+                            </span>
+                        </div>
+                        <h2 class="rc_tit">오늘의 관측날씨</h2>
+                        <div class="explain">
+                            <strong>
+                                <i class="fa-solid fa-star"></i>
+                                <p>
+                                    <span>
+                                        지금은 관측이 어려워요!
+                                    </span>
+                                    <em>일출시간 <span>아침06:26</span></em>
+                                    <em>일몰시간 <span>저녁20:14</span></em>
+                                </p>
+                            </strong>
+                        </div>
+                        <p>실제 상황과 예보는 다를 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contents2">
+        <div id="bacground">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </div>
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <h2></h2>
+                <img src="" alt="Constellation">
+                <div class="description">
+                    <p></p>
+                </div>
+                <button class="close-popup">닫기</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="row2">
+                <div class="contents2 clearfix">
+                    <div class="constell_txt">
+                        <h3>이달의 별자리</h3>
+                        <span>12궁 별자리</span>
+                        <p>탄생일어쩌고 ㄷ하늘에 뜬 별자리를 찾아보세요</p>
+                    </div>
+                    <div class="constell" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="img/cont2_01.svg" alt="양자리 이미지">
+                                <p>양자리</p>
+                                <div class="description">
+                                    <h2>양자리</h2>
+                                    <p>가을철 별자리로, 태양이 머무는 기간은 4월 19일 ~ 5월 13일이다.
+                                        그리스 신화에서 부왕(父王)의 미움을 받은 오누이 프릭소스와 헬레를 태우고, 흑해 동쪽의 코르키스까지 날아간 황금털을 가진 양이 별자리가
+                                        되었다. 날아가는 도중에 여동생 헬레가 바다로 떨어져 죽고 말았다. 이후 이 해협은 ‘헬레스폰투스(현 다르다넬스 해협)’라고 부르게 되었다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_02.svg" alt="황소자리 이미지">
+                                <p>황소자리</p>
+                                <div class="description">
+                                    <h2>황소자리</h2>
+                                    <p>겨울철 별자리로, 태양이 머무는 기간은 5월 14일 ~ 6월 19일이다.
+                                        그리스 신화에서 제우스신이 페니키아의 공주 에우로파(Europa)를 유혹하기 위해 변신한 황소의 모습이다.
+                                        황소자리의 어깨에는 좀생이별(M45, 플레이아데스성단)과 황소자리의 첫 번째 별인 알데바란 인근으로 V자 모양의 별무리 히아데스성단을 포함하고
+                                        있다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_03.svg" alt="쌍둥이자리 이미지">
+                                <p>쌍둥이자리</p>
+                                <div class="description">
+                                    <h2>황소자리</h2>
+                                    <p>겨울철 별자리로, 태양이 머무는 기간은 5월 14일 ~ 6월 19일이다.
+                                        그리스 신화에서 제우스신이 페니키아의 공주 에우로파(Europa)를 유혹하기 위해 변신한 황소의 모습이다.
+                                        황소자리의 어깨에는 좀생이별(M45, 플레이아데스성단)과 황소자리의 첫 번째 별인 알데바란 인근으로 V자 모양의 별무리 히아데스성단을 포함하고
+                                        있다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_04.svg" alt="게자리 이미지">
+                                <p>게자리</p>
+                                <div class="description">
+                                    <h2>게자리</h2>
+                                    <p>겨울철 별자리로 태양이 머무는 기간은 7월 21일 ~ 8월 9일이다.
+                                        그리스 신화에서는 헤라여신의 명령을 받아 헤라클레스를 공격하였지만, 도리어 헤라클레스의 발에 밟혀 죽은 게의 별자리이다.
+                                        게자리의 중심에는 일명 ‘벌집성단’으로 알려져 있는 M44(프레세페 성단)가 있다. 늦은 겨울철 ~ 이른 봄철에 천체망원경으로 관측할 수 있는
+                                        거대한 성단이다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_05.svg" alt="사자자리 이미지">
+                                <p>사자자리</p>
+                                <div class="description">
+                                    <h2>사자자리</h2>
+                                    <p>봄철 별자리로 태양이 머무는 기간은 8월 10일 ~ 9월 15일이다.
+                                        그리스 신화의 영웅 헤라클레스의 손에 죽임을 당한 네메아의 사자이다. 사자자리의 첫 번째 별인 레굴루스는 ‘작은 왕’이라는 뜻이다.
+                                        해마다 11월 17~18일경은 ‘사자자리 유성우’의 활동 시기로, 저녁보다는 새벽에 밤하늘을 살펴보기를 권한다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_06.svg" alt="처녀자리 이미지">
+                                <p>처녀자리</p>
+                                <div class="description">
+                                    <h2>처녀자리</h2>
+                                    <p>봄철 별자리로 태양이 머무는 기간은 9월 16일 ~ 10월 30일이다.
+                                        그리스 신화에서 대지의 여신 데메테르의 딸 ‘페르세포네’가 처녀자리의 주인공으로 알려져 있다. 봄이 되면 남동쪽 하늘에서 떠오르는 처녀자리는
+                                        지하세계(저승)에서 지상으로 올라오는 페르세포네의 모습이라고 한다.
+                                        처녀자리에는 수백여개의 은하들이 무리를 이루고 있는 ‘처녀자리 은하단’이 있다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_07.svg" alt="천칭자리 이미지">
+                                <p>천칭자리</p>
+                                <div class="description">
+                                    <h2>천칭자리</h2>
+                                    <p>봄철 별자리로 태양이 머무는 기간은 10월 31일 ~ 11월 22일이다.
+                                        그리스 신화에서 정의의 여신 아스트라이아가 가진 정의의 저울(천칭)로, 인간의 선악을 재어 운명을 결정했다고 한다. 천칭자리로 분리되기 전에는
+                                        전갈자리의 일부이기도 했다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_08.svg" alt="전갈자리 이미지">
+                                <p>전갈자리</p>
+                                <div class="description">
+                                    <h2>전갈자리</h2>
+                                    <p>여름철 별자리로 태양이 머무는 기간은 11월 23일 ~ 11월 29일이다.
+                                        그리스 신화에서는 헤라 여신이 사냥꾼 오리온을 죽이려고 풀어놓은 전갈이라고 한다. 전갈자리의 첫 번째 별인 안타레스는 ‘화성의 라이벌’이라는
+                                        별명이 붙을 정도로 붉은 색을 띄고 있는 별이다. 안타레스 옆으로는 M4, M80 구상성단을 천체망원경으로 관측할 수 있고, 전갈자리의
+                                        꼬리쪽에는 M6, M7 산개성단이 있다. M6 산개성단은 천체망원경으로 보면 별들의 배치가 나비모양처럼 생겨서 ‘나비성단’으로 불린다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_09.svg" alt="사수자리 이미지">
+                                <p>사수자리</p>
+                                <div class="description">
+                                    <h2>사수자리</h2>
+                                    <p>여름철 별자리로 태양이 머무는 기간은 12월 18일 ~ 1월 18일이다.
+                                        그리스 신화에서는 궁수자리의 주인공을 반인반마 켄타우로스 족의 현인 ‘케이론’이라고 한다.
+                                        빛공해가 없는 곳에서 밤하늘의 은하수를 본다면, 은하수가 가장 밝고 짙은 곳이 궁수자리 쪽인데, 우리 은하의 중심이 궁수자리 쪽에 있어서
+                                        그렇다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_10.svg" alt="염소자리 이미지">
+                                <p>염소자리</p>
+                                <div class="description">
+                                    <h2>염소자리</h2>
+                                    <p>여름철 별자리로 태양이 머무는 기간은 1월 19일 ~ 2월 15일이다.
+                                        그리스 신화에서는 괴물 티폰에게 습격당한 가축과 목축의 신 ‘판’이 도망가기 위해 급하게 변신하면서 상반신은 염소, 하반신은 물고기의 모습으로
+                                        변한 모습이다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_11.svg" alt="물병자리 이미지">
+                                <p>물병자리</p>
+                                <div class="description">
+                                    <h2>물병자리</h2>
+                                    <p>가을철 별자리로 태양이 머무는 기간은 2월 16일 ~ 3월 11일이다.
+                                        그리스 신화에서는 독수리에게 납치당해 신들에게 술을 따르는 일을 하게 된 트로이의 미소년 ‘가니메데’가 물병자리의 주인공으로 알려져 있다.
+                                        물병자리에는 M2 구상성단과 일명 ‘쌍가락지 성운’이라는 별명을 가진 NGC7293 행성상성운이 유명하다.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/cont2_12.svg" alt="물고기자리 이미지">
+                                <p>물고기자리</p>
+                                <div class="description">
+                                    <h2>물고기자리</h2>
+                                    <p>가을철 별자리로 태양이 머무는 기간은 3월 12일 ~ 4월 18일이다.
+                                        그리스 신화에서는 괴물 티폰에게 습격당한 미(美)의 여신 아프로디테와 아들인 에로스가 변신한 물고기들의 모습이라고 한다.
+                                        황도 12궁을 처음 정했을 때, 춘분점은 양자리에 있었으나, 이후 지구의 세차운동으로 오늘날에는 물고기자리에 춘분점(춘분날 태양이 위치하는
+                                        곳)이 있다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="constell_search">
+                        <input type="text">
+                        <span class="constell_search_img"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </input>
+                        <!-- <div class="serach_img"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contents3">
+        <div class="container">
+            <div class="row">
+                <h2>공지사항</h2>
+                <div class="contents3 clearfix">
+                    <div class="notice">
+                        <h3 class="notice_tit">이달의 공지사항</h3>
+                        <table class="noticeTB table">
+                            <tr>
+                                <th>
+                                    <article>공지사항</article>
+                                </th>
+                                <th>[긴급] 8월 10일 임시휴관 안내</th>
+                                <th>
+                                    <span>08-10</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <article>공지사항</article>
+                                </th>
+                                <th>8월 블루문 관측 프로그램 개최</th>
+                                <th>
+                                    <span>08-06</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <article>공지사항</article>
+                                </th>
+                                <th>[수리완료]엘레베이터 고장으로 인한 공사</th>
+                                <th>
+                                    <span>08-06</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <article>공지사항</article>
+                                </th>
+                                <th>[천체관측회]페르세우스 유성우 관측행사 마감</th>
+                                <th>
+                                    <article>
+                                        <span>07-30</span>
+                                    </article>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <article>공지사항</article>
+                                </th>
+                                <th>[천체관측회]페르세우스 유성우 관측행사 마감</th>
+                                <th>
+                                    <article>
+                                        <span>07-30</span>
+                                    </article>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <article>공지사항</article>
+                                </th>
+                                <th>[천체관측회]페르세우스 유성우 관측행사 마감</th>
+                                <th>
+                                    <article>
+                                        <span>07-30</span>
+                                    </article>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="reser">
+                        <h3>간편하게 즐기는 방법</h3>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/image 70.png" class="card-img-top" alt="온라인예약이미지">
+                            <div class="card-body">
+                                <h5 class="card-title">온라인 예약</h5>
+                                <p class="card-text">간편한 예약방법으로 <br>이용이 더욱 편리합니다.</p>
+                                <a href="#" class="btn btn-primary">예약 바로하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reser">
+                        <h3>오늘의 운세</h3>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/image 70.png" class="card-img-top" alt="온라인예약이미지">
+                            <div class="card-body">
+                                <h5 class="card-title">별자리 운세</h5>
+                                <p class="card-text">오늘 나의 행운지수를<br> 확인해 보세요.</p>
+                                <a href="#" class="btn btn-primary">결과 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="contents4">
+        <div id="bacground">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </div>
+        <div class="container2">
+            <div class="row2">
+                <div class="star_news">
+                    <div class="star_tit1">
+                        <h2>별의 별 이야기</h2>
+                    </div>
+                    <div class="contents4 clearfix" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <!-- <span></span> -->
+                        <div class="star_cont cont3_f">
+                            <div class="star_i star_img1">
+                            </div>
+                            <div class="star_t star_txt1">
+                                <p>8월 : 오늘 밤 달 옆에 있는 행성</p>
+                                <span>
+                                    8월에는 달이 하늘에서 토성, 금성 및 화성과 만납니다.<br>
+                                    달에 가장 가까운 행성이 무엇인지 알아보세요.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_s">
+                            <div class="star_i star_img2"></div>
+                            <div class="star_t star_txt1">
+                                <p>8월 보름달 : 철갑상어 슈퍼문과 블루 슈퍼문
+                                </p>
+                                <span>
+                                    8월은 철갑상어 문과 블루문이라는 두 개의 보름달이 뜨는 특별한
+                                    달입니다. 게다가 둘 다 슈퍼문이 될 것입니다. 언제 보름달을
+                                    관측할 수 있는지 알아봅시다!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_t">
+                            <div class="star_i star_img3"></div>
+                            <div class="star_t star_txt1">
+                                <p>사자의 심장에 있는 왕자 별 레굴루스</p>
+                                <span>
+                                    레굴루스는 사자자리에 위치하며, 밤하늘에서 밝게 빛나 특별한
+                                    장비 없이도 가장 쉽게 찾을 수 있는 별 중 하나입니다.
+                                    하늘에서 레굴루스를 찾는 방법을 알아보고, 왕자의 왕실
+                                    뿌리를 증명하는 "재미있는 사실" 섹션을 놓치지 마세요.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_f">
+                            <div class="star_i star_img4"></div>
+                            <div class="star_t star_txt1">
+                                <p>“샛별” 금성에 대한 재미있는 사실</p>
+                                <span>
+                                    금성은 하늘에서 가장 밝게 빛나는 행성이기에 고대
+                                    천문학자들도 알고 있었습니다.
+                                    금성의 발견 역사부터 표면의 색상까지 이 매력적인 행성에
+                                    대해 자세히 알려드리겠습니다.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_f">
+                            <div class="star_i star_img5"></div>
+                            <div class="star_t star_txt1">
+                                <p>페르세우스자리 유성우 2023 관측 시기</p>
+                                <span>
+                                    페르세우스자리 유성우를 볼 수 있는 팁과 이러한
+                                    스펙터클한 이벤트를 관찰할 수 있는 최상의 날짜에
+                                    대해 알려드리겠습니다. 시작해 봅시다!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_f">
+                            <div class="star_i star_img6"></div>
+                            <div class="star_t star_txt1">
+                                <p>여름철 대삼각형: 3개 별자리의 3개 별자리</p>
+                                <span>
+                                    여름철 대삼각형은 눈에 잘 띄는 별 패턴입니다.
+                                    그런데 "여름" 삼각형이라고 불리지만, 실제로는 일년 내내
+                                    볼 수 있습니다. 지금 여름 대삼각형을 알아보는 방법을
+                                    배우면 다시는 놓치지 않을 거예요!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_f">
+                            <div class="star_i star_img7"></div>
+                            <div class="star_t star_txt1">
+                                <p>거문고자리의 가장 밝은 별인 베가</p>
+                                <span>
+                                    베가는 가장 많이 연구된 별들 중 하나이며, 여전히 우리를 놀라게
+                                    할 만큼 충분히 가지고 있습니다. 여러분은 하늘에서 베가를 보는
+                                    방법과 그것을 그렇게 매혹적인 연구 대상으로
+                                    만드는 것을 탐구할 것입니다.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="star_cont cont3_f">
+                            <div class="star_i star_img8"></div>
+                            <div class="star_t star_txt1">
+                                <p>벌집 성단(M44): 사실, 신화, 위치</p>
+                                <span>
+                                    벌집 성단은 가장 유명한 심해 천체 중 하나입니다. 초보 천문학자에게는
+                                    훌륭한 천체이며, 경험이 많아진 후에도 지루할 틈이 없습니다.
+                                    벌집 성단의 위치 찾기부터 재미있는 교육적 사실까지, 이 천체의
+                                    벌집에 대해 알아야 할 모든 것을 알아보세요.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer id="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer">
+                    <div class="f_logo clearfix col">
+                        <a href="#"><img src="img/header_logo.svg" alt="별마루관측소 헤더 로고"></a>
+                    </div>
+                    <div class="sitemap clearfix col">
+                        <h4>사이트맵</h4>
+                        <ul class="clearfix">
+                            <li><a href="#">관측소 소개</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li><a href="#">운영시간안내</a></li>
+                            <li><a href="#">관측방법안내</a></li>
+                            <li><a href="#">예약안내</a></li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li><a href="#">봄</a></li>
+                            <li><a href="#">여름</a></li>
+                            <li><a href="#">가을</a></li>
+                            <li><a href="#">겨울</a></li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="copy clearfix col">
+                        <h4>Copyright</h4>
+                        <p>유승태 이재빈 정대원 정보영 조윤채 홍효민</p>
+                        <em>본 사이트는 포트폴리오 목적으로 제작되었습니다.</em>
+                    </div>
+                    <div class="family clearfix col">
+                        <h4>패밀리사이트</h4>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                대전시민천문대
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" id="dropdown" href="#">별마루별자리연구소</a>
+                                <a class="dropdown-item" id="dropdown" href="#">항공우주박물관</a>
+                                <a class="dropdown-item" id="dropdown" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_bootstrap@4.6.2_dist_js_bootstrap.bundle.min.js"></script>
+
+    <script>
+        AOS.init();
+
+        (function () { var w = window; if (w.ChannelIO) { return w.console.error("ChannelIO script included twice."); } var ch = function () { ch.c(arguments); }; ch.q = []; ch.c = function (args) { ch.q.push(args); }; w.ChannelIO = ch; function l() { if (w.ChannelIOInitialized) { return; } w.ChannelIOInitialized = true; var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js"; var x = document.getElementsByTagName("script")[0]; if (x.parentNode) { x.parentNode.insertBefore(s, x); } } if (document.readyState === "complete") { l(); } else { w.addEventListener("DOMContentLoaded", l); w.addEventListener("load", l); } })();
+
+        ChannelIO('boot', {
+            "pluginKey": "0623baeb-38e6-4a65-bf97-9c02567be5f1"
+        });
+
+
+
+        // //header
+
+        $(window).scroll(function () {
+            let header = $("#header");
+            let wScroll = $(this).scrollTop();
+            if (wScroll >= 150) {
+                header.addClass("active");
+            } else {
+                header.removeClass("active");
+            }
+        });
+
+
+        winSize();
+        function winSize() {
+            let winW = $(window).width();
+            if (winW >= 0) {
+                $(".header .submenu").hide();
+            }
+        }
+
+        $(window).resize(function () {
+            winSize();
+        });
+
+        $(".nav > ul > li").mouseover(function () {
+            winW = $(window).width();
+            if (winW >= 0) {
+                $(".nav > ul > li").find(".submenu").stop().slideDown(200);
+                $("#navbg").stop().slideDown(200);
+            }
+        });
+
+        $(".nav > ul > li").mouseout(function () {
+            winW = $(window).width();
+            if (winW >= 0) {
+                $(".nav > ul > li").find(".submenu").stop().slideUp(200);
+                $("#navbg").stop().slideUp(200);
+            }
+        });
+
+        //day1
+        let day1 = setInterval(function () {
+            let today = new Date();
+            let dayList = ['일', '월', '화', '수', '목', '금', '토'];
+
+            let hh = addZero(today.getHours());
+            let mm = addZero(today.getMinutes());
+            let ss = addZero(today.getSeconds());
+
+            let YY = today.getFullYear();
+            let MM = today.getMonth() + 1
+            let DD = today.getDate();
+            let dd = dayList[today.getDay()];
+
+            $("#hours").text(hh).css({});
+            $("#min").text(mm);
+            // $("#sec").text(ss);
+
+            $("#month").text(YY);
+            $("#date").text(MM);
+            $("#year").text(DD);
+            $("#day").text(dd);
+
+            function addZero(num) {
+                return (num < 10 ? '0' + num : '' + num);
+            }
+        });
+
+        //day1_weather
+        $.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=1835848&appid=298d63d6fb516a217e0ef817a2e4af00&units=metric', function (data) {
+            // alert(data.list[0].main.temp);
+            let temp = data.list[0].main.temp.toFixed(0);
+            let weather = data.list[0].weather[0].main;
+            // let city = data.city.name;
+            console.log(weather);
+            $('.day1_weather').text("서울" + temp + '°C').css({ "font-family": "", "tex-align": "right", "font-weight": "700" });
+
+            //weather icon
+            if (weather == "Clouds") {
+                $('.day1_icon').css({
+                    "background-image": "url('img/icon_weather_cloudy.gif')", "background-size": "cover"
+                });
+            } else if (weather === "Clear") {
+                $('.day1_icon').css({
+                    "background-image": "url('img/icon_weather_sun.gif')", "background-size": "contain"
+                });
+            } else if (weather === "Thunderstorm") {
+                $('.day1_icon').css({
+                    "background-image": "url('img/icon_weather_sleet.gif')", "background-size": "contain"
+                });
+            } else if (weather === "Drizzle") {
+                $('.day1_icon').css({
+                    "background-image": "url('./img/icon_weather_sleet.gif')", "background-size": "contain"
+                });
+            } else if (weather === "Rain") {
+                $('.day1_icon').css({
+                    "background-image": "url('img/icon_weather_rain.gif')", "background-size": "cover"
+                });
+            } else if (weather === "Snow") {
+                $('.day1_icon').css({
+                    "background-image": "url('img/icon_weather_snow.gif')", "background-size": "contain"
+                });
+            } else if (weather === "Atmosphere") {
+                $('.day1_icon').css({
+                    "background-image": "url('img/icon_weather_overcast.gif')", "background-size": "contain"
+                });
+            }
+        });
+
+
+        // banner?
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+
+
+
+        winSize();
+        function winSize() {
+            let winW = $(window).width();
+            if (winW >= 0) {
+                $(".header .submenu").hide();
+            }
+        }
+
+        $(window).resize(function () {
+            winSize();
+        });
+
+        $(".nav > ul > li").mouseover(function () {
+            winW = $(window).width();
+            if (winW >= 0) {
+                $(".nav > ul > li").find(".submenu").stop().slideDown(200);
+                $("#navbg").stop().slideDown(200);
+            }
+        });
+
+        $(".nav > ul > li").mouseout(function () {
+
+            if (winW >= 0) {
+                $(".nav > ul > li").find(".submenu").stop().slideUp(200);
+                $("#navbg").stop().slideUp(200);
+            }
+        });
+
+        //팝업창
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                // Owl carousel options
+            });
+
+            owl.find('.item').on('click', function () {
+                var constellationName = $(this).find('.description h2').text();
+                var imgSrc = $(this).find('img').attr('src');
+                var description = $(this).find('.description p').html();
+
+                $('.popup-content h2').text(constellationName);
+                $('.popup-content img').attr('src', imgSrc);
+                $('.popup-content .description p').html(description);
+                $('.popup-overlay').fadeIn();
+            });
+
+            $('.close-popup').on('click', function () {
+                $('.popup-overlay').fadeOut();
+            });
+        });
+    </script>
+
+</html>

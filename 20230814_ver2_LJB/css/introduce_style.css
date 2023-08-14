@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MICEGothic Bold';
+}
+
+
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 레이아웃 */
+#wrap {}
+
+
+/* 헤더 */
+#header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 100;
+  }
+  
+  #header:hover {
+    background-color: #fff;
+  }
+  
+  #header:hover a {
+    color: #000;
+  }
+  #header:hover a i {
+    color: #000;
+  }
+  
+  #header:hover .header a img {
+    fill: #000;
+    filter: invert(100);
+    background-color: #000;
+  }
+  
+  #header:hover .submenu a {
+    color: #000;
+  }
+  
+  #header.active {
+    background-color: #fff;
+    height: 150px;
+  }
+  
+  #header.active .header a {
+    color: #000;
+  }
+  
+  #header.active .header a img {
+    fill: #000;
+    filter: invert(100);
+    background-color: #000;
+  }
+
+
+
+
+
+
+#contents1 {
+     /* height: 40vh; */
+     width: 100%;
+     /* height: 30%; */
+     height: 20%;
+
+}
+/* #contents1 .bg {
+    height: 30px;
+    width: 100%;
+} */
+.container {
+    width: 1500px;
+    height: inherit;
+    /* background-color: red; */
+    margin: 0 auto;
+
+}
+.row {}
+
+/* header */
+.header {
+    /* width: 1920px; */
+    height: 150px;
+    margin-bottom: 20px;
+}
+.header .logo {}
+.header .nav {}
+
+/* contents */
+.content1 {
+    width: 100%;
+    /* height: 600px; */
+    /* background-color: lightpink; */
+    /* margin-left: 210px; */
+    margin-top: 100px;
+    padding-bottom: 40%;
+    
+  
+}
+/* .content1 img {
+    width: 100%;
+} */
+
+.content1 h2 {
+    font-size: 3.5em;
+    /* padding-bottom: 100px; */
+    padding-top: 40%;
+    text-align: left;
+    line-height: 1.3;
+    opacity: 0;
+    transition: all 0.8s;
+    padding-left: 2%;
+    color: white;
+    
+}
+.content1 h2 span {
+    color: blueviolet;
+}
+
+
+
+.content2 {
+    width: 100%;
+    font-size: 1.3em;
+    /* height: 400px; */
+    /* background-color: blue; */
+    padding: 20px 2%;
+    text-align: justify; 
+    /* padding-left: 20px; */
+    line-height: 2.5;
+    margin-top: 120px;
+    /* opacity: 0;
+    transition: all 0.8s; */
+    
+}
+.content3 {
+    overflow: hidden;
+    padding-bottom: 5%;
+    margin-top: 120px;
+}
+.content3 .notice1 {
+    width: 48%;
+    float: left;
+    /* background-color: #dbeef3;
+    border: 1px solid #dbeef3;
+    border-radius: 10px; */
+}
+
+
+.content3 .notice1 h3 {
+    font-size: 2em;
+    /* padding: 3% 0  3% 2%; */
+    /* padding-left: 2%; */
+    padding: 2%;
+    
+}
+.content3 .notice1 ul {}
+.content3 .notice1 ul li {
+    overflow: hidden;
+    position: relative;
+    line-height: 3;
+    padding-left: 6%;
+
+}
+.content3 .notice1 ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+
+}
+.content3 .notice1 ul li a {
+    font-size: 1.2em;
+}
+
+
+.content3 .notice2 {
+    width: 48%;
+    float: right;
+}
+.content3 .notice2 img {
+     width: 100%;
+}
