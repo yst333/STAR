@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+@media(max-width:1024px){} 
+
+
+ /*노트북*/
+@media(max-width:1024px){
+    .container{
+        width: 100vw;
+        height: inherit;
+        margin: 0 auto;
+        background-color: gray;
+      }
+      
+      .container2{
+        width: 1400px;
+        height: inherit;
+        margin: 0 auto;
+        background-color: red;
+      }
+
+      #banner{
+        width: 1400px;
+      }
+      #contents{
+        width: 1400px;
+      }
+}
+
+
+
+@media(max-width:768px){ /*태블릿 row값추가*/
+}
+
+@media(max-width:480px){ /*모바일 */
+}
