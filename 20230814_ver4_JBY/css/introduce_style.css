@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MICEGothic Bold';
+}
+
+
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 레이아웃 */
+#wrap {}
+
+
+/* 헤더 */
+#header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 100;
+  }
+  
+  #header:hover {
+    background-color: #fff;
+  }
+  
+  #header:hover a {
+    color: #000;
+  }
+  #header:hover a i {
+    color: #000;
+  }
+  
+  #header:hover .header a img {
+    fill: #000;
+    filter: invert(100);
+    background-color: #000;
+  }
+  
+  #header:hover .submenu a {
+    color: #000;
+  }
+  
+  #header.active {
+    background-color: #fff;
+    height: 150px;
+  }
+  
+  #header.active .header a {
+    color: #000;
+  }
+  
+  #header.active .header a img {
+    fill: #000;
+    filter: invert(100);
+    background-color: #000;
+  }
+
+
+  #footer{
+    width: 100%;
+    background-color: #262749;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+
+
+#contents1 {
+     /* height: 40vh; */
+     width: 100%;
+     /* height: 30%; */
+     height: 20%;
+
+}
+/* #contents1 .bg {
+    height: 30px;
+    width: 100%;
+} */
+
+.container{
+    width: 1300px;
+    height: inherit;
+    margin: 0 auto;
+  }
+  
+  .container2{
+    width: 1500px;
+    height: inherit;
+    margin: 0 auto;
+  }
+
+  
+
+
+   .row {
+    margin-left: 0;
+    margin-right: 0;
+   }
+
+/* header */
+.header {
+    /* width: 1920px; */
+    height: 150px;
+    margin-bottom: 20px;
+}
+.header .logo {}
+.header .nav {}
+
+/* contents */
+.content1 {
+    width: 100%;
+    /* height: 600px; */
+    /* background-color: lightpink; */
+    /* margin-left: 210px; */
+    margin-top: 100px;
+    padding-bottom: 40%;
+    
+  
+}
+/* .content1 img {
+    width: 100%;
+} */
+
+.content1 h2 {
+    font-size: 3.5em;
+    /* padding-bottom: 100px; */
+    padding-top: 40%;
+    text-align: left;
+    line-height: 1.3;
+    opacity: 0;
+    transition: all 0.8s;
+    padding-left: 2%;
+    color: white;
+    
+}
+.content1 h2 span {
+    color: blueviolet;
+}
+
+
+
+.content2 {
+    width: 100%;
+    font-size: 1.3em;
+    /* height: 400px; */
+    /* background-color: blue; */
+    padding: 20px 2%;
+    text-align: justify; 
+    /* padding-left: 20px; */
+    line-height: 2.5;
+    margin-top: 120px;
+    /* opacity: 0;
+    transition: all 0.8s; */
+    
+}
+.content3 {
+    overflow: hidden;
+    padding-bottom: 5%;
+    margin-top: 120px;
+}
+.content3 .notice1 {
+    width: 48%;
+    float: left;
+    /* background-color: #dbeef3;
+    border: 1px solid #dbeef3;
+    border-radius: 10px; */
+}
+
+
+.content3 .notice1 h3 {
+    font-size: 2em;
+    /* padding: 3% 0  3% 2%; */
+    /* padding-left: 2%; */
+    padding: 2%;
+    
+}
+.content3 .notice1 ul {}
+.content3 .notice1 ul li {
+    overflow: hidden;
+    position: relative;
+    line-height: 3;
+    padding-left: 2%;
+
+}
+/* .content3 .notice1 ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+
+} */
+
+.content3 .notice1 ul li a {
+    font-size: 1.2em;
+}
+
+
+.content3 .notice2 {
+    width: 48%;
+    float: right;
+}
+.content3 .notice2 img {
+     width: 100%;
+}
+
+
+
+  /* footer */
+
+.footer{
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.footer>div{
+  margin-right: 3.3%;
+  /* padding-top: 15px; */
+}
+.footer>div:last-child{
+  margin-right: 0;
+}
+
+  .footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'MICEGothic;';
+  }
+
+  .footer p{
+    text-decoration: none;
+    color: white;
+    font-family: 'MICEGothic;';
+  }
+
+  .footer em{
+    text-decoration: none;
+    color: white;
+    font-family: 'MICEGothic;';
+  }
+
+  .footer h4{
+    color: white;
+    font-size: 1.3em;
+    padding: 15px 0 10px 0;
+  }
+
+  .footer a:hover{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  .f_logo, .sitemap, .copy, .family{
+    width: 22.5%;
+    float: left;
+  }
+  
+  .f_logo{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .f_logo a img{
+    width: 100%;
+  }
+  
+  .sitemap ul, .sitemap  li{
+  list-style: none;
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.sitemap>ul>li{
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 2px;
+  font-size: 1em;
+}
+.sitemap>ul>li:last-child{
+  margin-bottom: 0;
+}
+
+.copy{
+  line-height: 1.5;
+}
+
+.copy p{
+  font-size: 1em;
+}
+.copy em{
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+
+.family a{
+  color: white;
+  font-family: 'YESGothic-Regular';
+  font-weight: 400;
+}
+
+/* 부트스트랩 푸터 패밀리사이트 */
+.dropdown-menu{
+  background-color: rgb(38, 39, 73,0.8);
+}

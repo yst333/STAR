@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MICEGothic Bold';
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 레이아웃 */
+#wrap {}
+#header {
+    /* background-color: blueviolet; */
+    height: 150px;
+}
+#contents1 {
+    width: 100%;
+    padding-top: 150px;
+}
+#contents1 img {
+    width: 100%;
+}
+
+#footer{
+  width: 100%;
+  background-color: #262749;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.container {
+    width: 1500px;
+    height: inherit;
+    /* background-color: red; */
+    margin: 0 auto;
+
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1500px !important;
+  }
+}
+
+
+/* header */
+.header {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* contents */
+
+.contents1 {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.contents2 {
+  width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3em;
+    text-align: center;
+}
+.contents3 {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.contents3 img {
+    margin: 0 auto;
+}
+.contents4 {
+  width: 100%;
+}
+
+.contents4 article{
+  display: flex;
+  justify-content: center;
+}
+
+.contents4 ul {
+}
+.contents4 ul li {
+    overflow: hidden; 
+    line-height : 2;
+    margin: 0 auto;
+    /* padding-left: 15%; */
+    /* border: 1px solid #333; */
+    /* background-color: red; */
+
+    
+    
+}
+.contents4 ul li p {
+    float: left;
+    margin-right: 2%;
+    font-size: 3em;
+    /* background-color: blue; */
+    cursor: pointer;
+    
+    
+}
+.contents4 ul li em {
+    float: left;
+    font-size: 1em;
+    /* border: 1px solid #333; */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: rgb(151, 165, 165);
+    height: 6em;
+    width: 50em;
+    text-align: center;
+    line-height: 6em;
+    background-color: #d1d1d1;
+    overflow: hidden;
+}
+.contents4 ul li .location {
+    line-height: 2em;
+}
+
+  /*-------------------------------------------------- 서브페이지 헤더 복사용 시작 */
+
+#header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 100;
+    /* margin-top: 150px; */
+    background-color: #fff;
+  }
+  
+  #banner {
+    width: 100%;
+  
+  }
+  
+  #contents {
+    position: relative;
+    height: 300vh;
+  }
+  
+  /*------------------------------------------------ .container 넓이 주의하세요!!! */
+  .container {
+    width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .row {}
+  
+  .header {
+    width: 100%;
+    height: 150px;
+  }
+
+  #header .header a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  #header .header a img {
+    fill: #000;
+    filter: invert(100);
+    background-color: transparent;
+  
+  }
+  
+  .logo_header {
+    width: 35%;
+    height: 150px;
+    padding-top: 28.5px;
+    /* background-color: green; */
+  }
+  
+  .logo_header h1 {}
+  
+  .logo_header h1 img {
+    width: 90%;
+  }
+  
+  /* 네비 */
+  .n {
+    margin-top: -150px;
+  }
+  
+  .sub_nav {
+    height: 60px;
+    width: 65%;
+    float: right;
+    /* background-color: red; */
+  }
+  
+  .sub_nav ul {
+    margin-bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .sub_nav ul li {
+    width: 20%;
+    float: left;
+  }
+  
+  .sub_nav ul li a {
+    height: 60px;
+    line-height: 60px;
+    padding-right: 50px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .sub_nav ul li a i {
+    padding-right: 1em;
+  }
+  
+  .nav {
+    width: 65%;
+    /* background-color: blue; */
+    float: right;
+  }
+  
+  .nav>ul {
+    margin-bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .nav>ul>li {
+    width: 25%;
+    float: left;
+  }
+  
+  .nav ul li a {
+    height: 90px;
+    line-height: 90px;
+    /* padding-left: 30px; */
+    text-align: center;
+    font-size: 1.3em;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .nav ul li ul.submenu {
+    z-index: 10;
+  }
+  
+  .nav ul li ul.submenu li {}
+  
+  .nav ul li ul.submenu li a {
+    font-weight: normal;
+  }
+  
+  #navbg {
+    width: 100%;
+    height: 360px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    z-index: 9;
+    /* border-bottom: 1px solid darkblue; */
+    display: none;
+  }
+
+  /*-------------------------------------------------- 서브페이지 헤더 복사용 끝 */
+
+
+
+   /* footer */
+
+.footer{
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.footer>div{
+  margin-right: 3.3%;
+  /* padding-top: 15px; */
+}
+.footer>div:last-child{
+  margin-right: 0;
+}
+
+  .footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'MICEGothic;';
+  }
+
+  .footer p{
+    text-decoration: none;
+    color: white;
+    font-family: 'MICEGothic;';
+  }
+
+  .footer em{
+    text-decoration: none;
+    color: white;
+    font-family: 'MICEGothic;';
+  }
+
+  .footer h4{
+    color: white;
+    font-size: 1.3em;
+    padding: 15px 0 10px 0;
+  }
+
+  .footer a:hover{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  .f_logo, .sitemap, .copy, .family{
+    width: 22.5%;
+    float: left;
+  }
+  
+  .f_logo{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .f_logo a img{
+    width: 100%;
+  }
+  
+  .sitemap ul, .sitemap  li{
+  list-style: none;
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.sitemap>ul>li{
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 2px;
+  font-size: 1em;
+}
+.sitemap>ul>li:last-child{
+  margin-bottom: 0;
+}
+
+.copy{
+  line-height: 1.5;
+}
+
+.copy p{
+  font-size: 1em;
+}
+.copy em{
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+
+.family a{
+  color: white;
+  font-family: 'YESGothic-Regular';
+  font-weight: 400;
+}
+
+/* 부트스트랩 푸터 패밀리사이트 */
+.dropdown-menu{
+  background-color: rgb(38, 39, 73,0.8);
+}
