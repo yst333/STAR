@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/header_reset.css">
+    <link rel="stylesheet" href="./css/header_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/header_media.css">
+    <link rel="stylesheet" href="./css/main_media_v2.css">
+    <link rel="stylesheet" href="css/media_login.css">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container2">
+                <div class="row">
+                    <div class="header">
+                        <div class="logo_header">
+                            <h1>
+                                <a href="index.html"><img src="img/logo.svg" alt="로고이미지"></a>
+                            </h1>
+                        </div>
+                        <div class="n">
+                            <div class="sub_nav">
+                                <ul class="clearfix">
+                                    <li><a href="#"><i class="fa-regular fa-calendar-days"></i>온라인예약</a></li>
+                                    <li><a href="login.html"><i class="fa-solid fa-user"></i>로그인</a></li>
+                                    <li><a href="register.html"><i class="fa-solid fa-user-plus"></i>회원가입</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="#">별마루관측소</a>
+                                        <ul class="submenu">
+                                            <li><a href="introduce.html">관측소소개</a></li>
+                                            <li><a href="location.html">찾아오시는길</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">이용안내</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">운영시간안내</a></li>
+                                            <li><a href="#">관측방법안내</a></li>
+                                            <li><a href="#">예약안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">별별이야기</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">봄</a></li>
+                                            <li><a href="#">여름</a></li>
+                                            <li><a href="#">가을</a></li>
+                                            <li><a href="#">겨울</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">커뮤니티</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="fna.html">FAQ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="navbg"></div>
+                        <div id="barMenu">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="login">
+            <div class="container">
+                <div class="row">
+                    <div class="login">
+                        <div class="logo .col-xs-4 ">
+                            <a href="#"><img src="img/logo.svg" alt="별마루관측소 로고이미지"></a>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                              <label for="id">아이디</label>
+                              <input type="text" class="form-control" id="id" placeholder="아이디를 입력하세요">
+                            </div>
+                            <div class="form-group">
+                              <label for="pw">비밀번호</label>
+                              <input type="password" class="form-control" id="pw" placeholder="비밀번호를 입력하세요.">
+                            </div>
+                            <a href="#" class="find"><p>아이디 또는 비밀번호 찾기</p></a>
+                            <input class="loginbtn" type="submit" value="로그인" placeholder="Log in" />
+                          </form>
+                          <a class="button button--social-login button--facebook" href="#"><i class="fa-brands fa-facebook-f"></i> &nbsp;페이스북 계정으로 로그인하기</a>
+                    <a class="button button--social-login button--googleplus" href="#"><i class="fa-brands fa-google"></i> &nbsp;구글 계정으로 로그인하기</a>
+                        <!-- <form class="login_form">
+                            <input type="id" id="id" name="id" required placeholder="아이디를 입력해주세요." /> <br><br>
+                            <input type="password" name="pw1" id="pw1" required placeholder="비밀번호를 입력해주세요." /> <br><br>
+                            <input class="loginbtn" type="submit" value="로그인" placeholder="Sign Up" />
+                            <p><a class="find">아이디 또는 비밀번호 찾기</a></p>
+                            <a class="button button--social-login button--facebook" href="#"><i
+                                    class="icon fa fa-facebook"></i>페이스북 계정으로 로그인하기</a>
+                            <a class="button button--social-login button--googleplus" href="#"><i
+                                    class="icon fa fa-google-plus"></i>구글 계정으로 로그인하기</a>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container2">
+                <div class="row">
+                    <div class="footer">
+                        <div class="f_logo clearfix col">
+                            <a href="#"><img src="img/header_logo.svg" alt="별마루관측소 헤더 로고"></a>
+                        </div>
+                        <div class="sitemap clearfix col">
+                            <h4>사이트맵</h4>
+                            <ul class="clearfix">
+                                <li><a href="#">관측소 소개</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li><a href="#">운영시간안내</a></li>
+                                <li><a href="#">관측방법안내</a></li>
+                                <li><a href="#">예약안내</a></li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li><a href="#">봄</a></li>
+                                <li><a href="#">여름</a></li>
+                                <li><a href="#">가을</a></li>
+                                <li><a href="#">겨울</a></li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="copy clearfix col">
+                            <h4>Copyright</h4>
+                            <p>유승태 이재빈 정대원 정보영 조윤채 홍효민</p>
+                            <em>본 사이트는 포트폴리오 목적으로 제작되었습니다.</em>
+                        </div>
+                        <div class="family clearfix col">
+                            <h4>패밀리사이트</h4>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    대전시민천문대
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" id="dropdown" href="#">별마루별자리연구소</a>
+                                    <a class="dropdown-item" id="dropdown" href="#">항공우주박물관</a>
+                                    <a class="dropdown-item" id="dropdown" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_bootstrap@4.6.2_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- // header -->
+    <script>
+        $(window).scroll(function () {
+            let header = $("#header");
+            let wScroll = $(this).scrollTop();
+            if (wScroll >= 150) {
+                header.addClass("active");
+            } else {
+                header.removeClass("active");
+            }
+        });
+
+
+        winSize();
+        function winSize() {
+            let winW = $(window).width();
+            if (winW >= 0) {
+                $(".header .submenu").hide();
+            }
+        }
+
+        $(window).resize(function () {
+            winSize();
+        });
+
+        $(".nav > ul > li").mouseover(function () {
+            winW = $(window).width();
+            if (winW >= 0) {
+                $(".nav > ul > li").find(".submenu").stop().slideDown(200);
+                $("#navbg").stop().slideDown(200);
+            }
+        });
+
+        $(".nav > ul > li").mouseout(function () {
+            winW = $(window).width();
+            if (winW >= 0) {
+                $(".nav > ul > li").find(".submenu").stop().slideUp(200);
+                $("#navbg").stop().slideUp(200);
+            }
+        });
+
+           // 모바일네비게이션 클릭
+           $("#barMenu").click(function(){
+            $(".nav").toggleClass("open");
+        });
+        $("#header").mouseleave(function(){
+            $(".nav").removeClass("open");
+        });
+        $(".nav>ul>li>a").click(function(e){
+            if(winW < 960){
+                e.preventDefault();
+                $(".nav > ul > li > ul.submenu").stop().slideUp();
+                $(this).next("ul").stop().slideToggle();
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

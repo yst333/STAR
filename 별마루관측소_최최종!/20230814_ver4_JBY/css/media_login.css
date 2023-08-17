@@ -1,0 +1,36 @@
+@charset "utf-8";
+@media (max-height:1921px){
+    .container{
+      width: 100%;
+    }
+  }
+  @media (max-height:1024px){
+    .sub_nav ul li a {
+      font-size: 0.5em;
+    }
+  }
+
+  
+  
+  @media(max-width:960px) {
+    #barMenu .bar{
+        background-color: black;
+    }
+    #barMenu .bar::before,
+  #barMenu .bar::after{
+    background-color: #000;
+  }
+  #barMenu .bar::after{
+    top: 30px;
+  }
+  #barMenu {
+    width: 60px;
+    height: 48px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  }

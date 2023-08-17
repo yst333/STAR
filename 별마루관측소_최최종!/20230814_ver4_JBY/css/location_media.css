@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@media(max-width:1520px) {
+    .container {
+        width: 90%;
+    }
+    .contents4 ul li p {
+        width: 10%;
+        font-size: 3em;
+
+    }
+    .contents4 ul li em {
+        font-size: 1em;
+        width: 90%;
+    }
+}
+@media(max-width:1120px) {
+    /* .contents4 {
+        width: 50%;
+    } */
+    .contents4 ul li {
+        width: 100%;
+        padding-left: 0;
+    }
+    .contents4 ul li p {
+        width: 100%;
+        text-align: center;
+        font-size: 4.5em;
+    }
+    .contents4 ul li em {
+        text-align: center;
+        width: 100%;
+       
+    }
+
+
+
+
+
+}
+
+
+@media(max-width:1024px) {
+    .container {
+        width: 100%;
+      }
+    /* .contents4 ul li {
+        width: 90%;
+    }  */
+    .contents4 ul li {
+        width: 100%;
+        padding-left: 0;
+    }
+    .contents4 ul li p {
+        width: 10%;
+        font-size: 2.5em;
+
+    }
+    .contents4 ul li em {
+        font-size: 0.8em;
+        width: 90%;
+    }
+    .welcome {
+        width: 100%;
+    }
+}
+@media(max-width:960px) {
+    #barMenu .bar{
+        background-color: #000;
+    }
+    #barMenu .bar::before,
+#barMenu .bar::after{
+    background-color: #000;
+}
+    .contents2 {
+        font-size: 2.5em;
+    }
+    /* .contents4 ul li p {
+        font-size: 2em;
+    } */
+    .contents4 ul li p {
+        width: 10%;
+        font-size: 2.5em;
+
+    }
+    .contents4 ul li em {
+        font-size: 0.8em;
+        width: 90%;
+    }
+}
+
+
+@media(max-width:768px) {
+    .contents2 {
+        font-size: 2em;
+    }
+    .contents4 ul li p {
+        font-size: 2.5em;
+        width: 10%;
+    }
+    .contents4 ul li em {
+        font-size: 0.8em;
+        width: 90%;
+
+    }
+}
+@media(max-width:640px) {
+    .contents4 ul li p {
+        /* font-size: 3.5em;
+        width: 100%; */
+
+
+    }
+    .contents4 ul li em {
+        /* font-size: 0.5em;
+        width: 100%; */
+
+    }
+    .contents4 ul li .location {
+        line-height: 3em;
+        height: 9em;
+    }
+}
+@media(max-width:480px) {
+    .contents4 ul li em {
+        /* font-size: 0.3em; */
+        /* height: 8em;
+        line-height: 8em; */
+
+    }
+    .contents4 ul li .location {
+        height: 8em;
+        font-size: 0.5em;
+        line-height: 2.5em;
+        /* width: 55em; */
+        /* font-size: 20%; */
+    }
+}
+@media(max-width:477px) {
+   .container {
+    width: 480px;
+   }
+
+}
+
+
